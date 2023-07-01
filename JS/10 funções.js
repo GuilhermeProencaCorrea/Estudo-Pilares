@@ -8,6 +8,8 @@ Função arrow / arrow function
 let x = 9, y = 3;
 //Função void e com parâmetro
 
+
+
 function myfunction (p1,p2){
     
     //gera uma tabuda de um número x

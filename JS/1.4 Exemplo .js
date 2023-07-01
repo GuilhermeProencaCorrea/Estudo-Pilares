@@ -12,7 +12,7 @@ O js representa os dias da semana como:
 6 = Sábado
 */
 
-//Condição Multipla
+//Condições Múltipla
 
 switch (diaSem){
     case 0:
