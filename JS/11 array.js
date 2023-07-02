@@ -1,11 +1,9 @@
 const indoarabico = [1,2,3,4,5,6,7,8,9,0];
 console.log("Trás todos os elementos da matriz (indoarabico): "+indoarabico);
 
-console.log("-----------------------------------------------------------------");
 
-indoarabico[0]=10;
-let numero = indoarabico[0];
-console.log(numero);
+indoarabico[0]=10; //Reatribui um valor a index 0.
+console.log(indoarabico[0]);
 
 console.log("-----------------------------------------------------------------");
 //Método new Array() para cria arrays. new Array() e um construtor de matrizs embutido no js
