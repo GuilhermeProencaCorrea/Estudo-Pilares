@@ -55,4 +55,3 @@ class DadosPessoas {
  console.log(testeDeStrings_1);
  console.log(testeDeStrings_2);
  console.log(testeDeStrings_3);
-

@@ -24,7 +24,7 @@ console.log("-----------------------------------------------------------------")
 const multiplos = [];
 let i = 0;
 let tabuadado = 2;
-while(i<=10){
+while(i<=10){//Salvar os multiplos dentro da array
     multiplos[i]=tabuadado*i;
     i++
 }
@@ -32,11 +32,13 @@ console.log("Múltiplos da tabuada do "+tabuadado+" são: "+multiplos);
 
 console.log("-----------------------------------------------------------------");
 
-const family =["Mãe","Pai","Irmã","..."]
-family.forEach(ff);
-function ff(value){
-    console.log("T"+value+"T")
-}
+const family =["Mãe","Pai","Irmã","Irmão"]
+family.forEach(familia$);//Percorre a array family
+function familia$ (elemento){
+    console.log(elemento)
+};
+
+
 
 console.log("-----------------------------------------------------------------");
 const numeros = [1,2];
