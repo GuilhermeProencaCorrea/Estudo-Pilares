@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda com Animação</title>
+    <link rel="stylesheet" href="./../CSS/resetcssbásico.css">
+</head>
+<body>
+    
+    <div class="container">Borda</div>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #151320;
+        }
+        .container{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            color: #fff;
+            background-color: #151320;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font: bold 2em 'sans-serif'; /*peso tamanho tipo*/
+            text-transform: uppercase; /*Deixa o texto em caixa alta*/
+        }
+        .container::before,.container::after{
+            content: '';
+            position: absolute;
+            width: calc(100% + 30px); /*Pega 100% do tamanho do container mais 30 px*/
+            height: calc(100% + 30px);
+            background: linear-gradient(45deg, #ffff00,#00ff00,#0099ff,#001aff,#a200ff,#ff0055,
+            #ff0000,#ffff00,#00ff00,#0099ff,#001aff,#a200ff);
+            z-index: -1;
+            border-radius: 10px;
+            background-size: 300%;
+            animation: animaçõaborda 5s linear infinite;
+            /* animation: animaçõaborda 5s linear alternate infinite; */
+        }
+        .container::after{
+            filter: blur(50px);
+        }
+        @keyframes animaçõaborda {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 300%;
+            }
+            
+        }
+
+
+    </style>
+</body>
+</html>

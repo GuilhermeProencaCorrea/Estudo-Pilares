@@ -13,8 +13,8 @@
 
     <div class="containerpai">
     <div class="containerfilhotop">
-        <input type="text" id="myInputnumberi" placeholder="Digite um número" value="">
-        <input type="text" id="myInputnumberii" placeholder="Digite um número" value="">
+        <input type="number" id="myInputnumberi" placeholder="Digite um número" value="0">
+        <input type="number" id="myInputnumberii" placeholder="Digite um número" value="0">
     </div>
     <div class="containerfilhodown">
         <div class="buttonoperação" onclick="soma()">+</div>
@@ -38,6 +38,9 @@
         list-style: none;
         font-family:sans-serif;
         }
+        body{
+            background-color: #151320;
+        }
         .containerpai{
             display: flex;
             width: 100%;
@@ -60,6 +63,7 @@
             height: 200px;
             margin: 5px;
             border: 2px solid red;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -91,23 +95,30 @@
     </style>
     <script>
         //Mundo JavaScript
-       let number1 = document.getElementById("myInputnumberi").value;
-       let number2 = document.getElementById("myInputnumberii").value;
        let text = '';
 
        function soma () {
-        text = number1+number2;
+        let number1 = parseInt(document.getElementById("myInputnumberi").value, 10);
+        //conversão de string para number, base 10
+        let number2 = parseInt(document.getElementById("myInputnumberii").value, 10); 
+        text = number1+number2
         document.getElementById("text").innerHTML= text;
        }
        function subtracao () {
+        let number1 = document.getElementById("myInputnumberi").value;
+        let number2 = document.getElementById("myInputnumberii").value;
         text = number1-number2;
         document.getElementById("text").innerHTML= text;
        }
        function multiplicacao () {
+        let number1 = document.getElementById("myInputnumberi").value;
+        let number2 = document.getElementById("myInputnumberii").value;
         text = number1*number2;
         document.getElementById("text").innerHTML= text;
        }
        function divisao () {
+        let number1 = document.getElementById("myInputnumberi").value;
+        let number2 = document.getElementById("myInputnumberii").value;
         text = number1/number2;
         document.getElementById("text").innerHTML= text;
        }
