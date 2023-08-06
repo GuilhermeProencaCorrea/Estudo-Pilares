@@ -7,22 +7,23 @@
     <title>Links</title>
 </head>
 <body>
-    <h1>Links no HTML</h1>
+    
 
-    <h2>Abrir o link na mesma página</h2>
-    <a href="https://www.brainfacts.org/">Brain1</a> <!--target="_self"-->
-    <h2>Abrir o link em outra página</h2> 
-    <a href="https://www.brainfacts.org/" target="_blank" >Brain2</a> <!--target="_blank"-->
-    <h2>Abre no quadro pai</h2>
-    <a href="https://www.brainfacts.org/" target="_parent">Brain3</a> <!--target="_parent"-->
-    <h2>Abre em todo o corpo da janela</h2>
-    <a href="https://www.brainfacts.org/" target="_top">Brain4</a> <!--target="_top"-->
-    <h2>Imagem com link</h2>
-    <a href="https://www.brainfacts.org/" target="_blank">
+    <div id="topo">
+        <h1>Links no HTML</h1>
+    </div>
+    <div id="corpo">
+        <h2>Abrir link na mesma página (Padrão):</h2>
+        <p><a href="https://www.brainfacts.org/">Texto</a></p>
+        <h2>Abrir link em outra página <mark>(target="_blank")</mark>:</h2>
+        <p><a href="https://www.brainfacts.org/" target="_blank" >Texto</a></p>
+        <h2>Imagem com link:</h2>
+        <a href="./3.1 links.html">
         <img src="./../img/human-brain-symbol-icon-png.webp" alt="Cérebro" width="100px" height="80px">
-    </a>
-    <h2>Botão com link</h2>
-    <button onclick="document.location='https://www.brainfacts.org/'">Botão</button>
+        </a>
+        <h2>Botão com link:</h2>
+        <button onclick="document.location='https://www.brainfacts.org/'">Botão</button>    
+    </div>
     
     <style>
      *{
@@ -32,15 +33,39 @@
         text-decoration: none;
         list-style: none;
         font-family:sans-serif;
-    }   
+    }
+    #topo{
+        display: flex;
+        background-color: rgb(233, 224, 224);
+        margin: 30px;
+        justify-content: center;
+        
+    }
+    #corpo{
+        display: flex;
+        background-color: rgb(233, 224, 224);
+        margin: 30px;
+        padding: 10px;
+        flex-direction: column;
+        height: 500px;        
+
+    } 
+    h2{
+        font-family: sans-serif;
+        font-size: 100%;
+    } 
     button{
         width: 100px;
         height: 50px;
         border-radius: 10px;
         border: none;
-        background-color: yellow;
-        
+        background-color: gray; 
+        cursor: pointer;
     }
+    button:hover{
+        background-color: greenyellow;
+    }
+
     </style>
  
 </body>
