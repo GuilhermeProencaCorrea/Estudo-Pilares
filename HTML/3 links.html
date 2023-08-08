@@ -4,69 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./3 links.css">
     <title>Links</title>
 </head>
 <body>
-    
-
     <div id="topo">
         <h1>Links no HTML</h1>
     </div>
     <div id="corpo">
-        <h2>Abrir link na mesma página (Padrão):</h2>
-        <p><a href="https://www.brainfacts.org/">Texto</a></p>
-        <h2>Abrir link em outra página <mark>(target="_blank")</mark>:</h2>
-        <p><a href="https://www.brainfacts.org/" target="_blank" >Texto</a></p>
+        <h3>Tópico 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa minus praesentium nostrum, sit, doloremque quo ex eligendi aspernatur, perferendis possimus? Illo similique, perspiciatis hic accusantium quaerat quae velit cumque?</p>
+        <h3>Texto como link padrão:</h3>
+        <p><a href="./3.1 links.html" title="">Texto com link</a></p>
+        <h3>Tag link com atributo target="_blank":</h3>
+        <p><a href="./3.1 links.html" target="_blank" >Texto com link</a></p>
+        <!--atributo target => especifica onde abrir o documento
+        _self abre na mesma guia
+        _blank abre em uma nova guia
+        _parent abre no quadro pai
+        _top abre em todo corpo da janela-->
         <h2>Imagem com link:</h2>
-        <a href="./3.1 links.html">
+        <h3>Imagem dentro da tag link:</h3>
+        <a href="./3.1 links.html"><!--Imagem com link-->
         <img src="./../img/human-brain-symbol-icon-png.webp" alt="Cérebro" width="100px" height="80px">
         </a>
-        <h2>Botão com link:</h2>
-        <button onclick="document.location='https://www.brainfacts.org/'">Botão</button>    
+        <h3>Link atributo título:</h3>
+        <a href="./3.1 links.html" title="Vai para página 2">Link com Título</a>
+        <!--Informações extra sobre o elemento-->
+        <h3>Link com email href="mailto:email":</h3>
+        <a href="mailto:someone@example.com">My E-mail</a>
+        <h3>Botão dentro da tag link:</h3>
+        <a href="./3.1 links.html">
+            <button title="Botão dentro da tag a">Botão com link</button>
+        </a>
+        <h3>Link estilizado com botão:</h3>
+        <a href="./3.1 links.html" id="Botaolink">Botaolink</a>  
+        <h3>Link com marcador de texto:</h3>
+        <a href="#paragrado-3">Texto com link</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate, iure deserunt ducimus sit illum recusandae provident esse, ad voluptatum maiores tenetur consequuntur vero temporibus inventore eveniet unde hic nesciunt.
+        </p>
+        <p id="paragrado-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor magnam qui, amet asperiores fuga quidem id eaque quia quam nisi illo nam porro eveniet harum temporibus! Veritatis, inventore nesciunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur! Accusantium vel consequuntur sequi nobis? Corporis voluptate facere ut doloremque! Rem suscipit deserunt eligendi magni magnam eaque et tenetur harum.        
+        </p>
     </div>
-    
-    <style>
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-        font-family:sans-serif;
-    }
-    #topo{
-        display: flex;
-        background-color: rgb(233, 224, 224);
-        margin: 30px;
-        justify-content: center;
-        
-    }
-    #corpo{
-        display: flex;
-        background-color: rgb(233, 224, 224);
-        margin: 30px;
-        padding: 10px;
-        flex-direction: column;
-        height: 500px;        
-
-    } 
-    h2{
-        font-family: sans-serif;
-        font-size: 100%;
-    } 
-    button{
-        width: 100px;
-        height: 50px;
-        border-radius: 10px;
-        border: none;
-        background-color: gray; 
-        cursor: pointer;
-    }
-    button:hover{
-        background-color: greenyellow;
-    }
-
-    </style>
- 
 </body>
 </html>
