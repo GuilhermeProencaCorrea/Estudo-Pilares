@@ -1,0 +1,28 @@
+<h1>Média bimestral</h1>
+
+<script>
+    
+document.write("<h3>")
+var nome = prompt("Digite seu nome:");
+alert("Informe ao sistema suas notas");
+var nota1 = prompt("Nota 1");
+var nota2 = prompt("Nota 2");
+var nota3 = prompt("Nota 3");
+var nota4 = prompt("Nota 4");
+var soma = parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3)+parseFloat(nota4);
+var media = soma/4;
+
+document.write("Nome: "+ nome);
+document.write(`
+<ol>
+    <li>Nota 1 = ${nota1}</li>
+    <li>Nota 2 = ${nota2}</li>
+    <li>Nota 3 = ${nota3}</li>
+    <li>Nota 4 = ${nota4}</li>
+</ol>
+`);
+document.write("<br>Soma da notas: "+soma);
+document.write("<br>Suma média foi de: "+media);
+document.write("</h3>")
+
+</script>

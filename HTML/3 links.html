@@ -1,52 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./3 links.css">
-    <title>Links</title>
-</head>
-<body>
-    <div id="topo">
-        <h1>Links no HTML</h1>
-    </div>
-    <div id="corpo">
-        <h3>Tópico 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa minus praesentium nostrum, sit, doloremque quo ex eligendi aspernatur, perferendis possimus? Illo similique, perspiciatis hic accusantium quaerat quae velit cumque?</p>
-        <h3>Texto como link padrão:</h3>
-        <p><a href="./3.1 links.html" title="">Texto com link</a></p>
-        <h3>Tag link com atributo target="_blank":</h3>
-        <p><a href="./3.1 links.html" target="_blank" >Texto com link</a></p>
-        <!--atributo target => especifica onde abrir o documento
+<!--Links-->
+
+<a href="./3.1 links.html" target="_self" title="Link para próxima página">My link</a><!--Linka o texto ao uma URL-->
+
+<!--atributo target => especifica onde abrir o documento
         _self abre na mesma guia
         _blank abre em uma nova guia
         _parent abre no quadro pai
-        _top abre em todo corpo da janela-->
-        <h2>Imagem com link:</h2>
-        <h3>Imagem dentro da tag link:</h3>
-        <a href="./3.1 links.html"><!--Imagem com link-->
-        <img src="./../img/human-brain-symbol-icon-png.webp" alt="Cérebro" width="100px" height="80px">
-        </a>
-        <h3>Link atributo título:</h3>
-        <a href="./3.1 links.html" title="Vai para página 2">Link com Título</a>
-        <!--Informações extra sobre o elemento-->
-        <h3>Link com email href="mailto:email":</h3>
-        <a href="mailto:someone@example.com">My E-mail</a>
-        <h3>Botão dentro da tag link:</h3>
-        <a href="./3.1 links.html">
-            <button title="Botão dentro da tag a">Botão com link</button>
-        </a>
-        <h3>Link estilizado com botão:</h3>
-        <a href="./3.1 links.html" id="Botaolink">Botaolink</a>  
-        <h3>Link com marcador de texto:</h3>
-        <a href="#paragrado-3">Texto com link</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate, iure deserunt ducimus sit illum recusandae provident esse, ad voluptatum maiores tenetur consequuntur vero temporibus inventore eveniet unde hic nesciunt.
-        </p>
-        <p id="paragrado-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor magnam qui, amet asperiores fuga quidem id eaque quia quam nisi illo nam porro eveniet harum temporibus! Veritatis, inventore nesciunt.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur! Accusantium vel consequuntur sequi nobis? Corporis voluptate facere ut doloremque! Rem suscipit deserunt eligendi magni magnam eaque et tenetur harum.        
-        </p>
-    </div>
-</body>
-</html>
+        _top abre em todo corpo da janela
+    -->
+
+<!--href = "mailto:example@example.com" Abre um gerenciador de email-->
+
+<br>
+<!--Imagem com um link-->
+<a href="https://www.w3schools.com/html/html_links.asp" title="w3schools">
+    <img src="./../assets/monalisa.jpg" alt="" width="70px" height="50px">
+</a>
+
+<br>
+<!--Botão com um link-->
+<a href="https://www.w3schools.com/html/html_links.asp" title="w3schools">
+    <button>My button</button>
+</a>
+
+<!--Marcadores: link para um paragrafo-->
+<a href="#5p" id="Botaolink">My link</a>
+<p>My texto</p>
+<p>My texto</p>
+<p>My texto</p>
+<p>My texto</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="5p">My texto</p>
+<p>My texto</p>
+
+
+
+<style>
+#Botaolink:link, #Botaolink:visited {
+background-color: #f44336;
+color: white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 10px;
+border-radius: 10px;
+}
+#Botaolink:hover, #Botaolink:active {
+background-color: red;
+}
+/* 
+Coloração dos links:
+link não visitado azul
+link visitado roxo
+link ativo vermelho*/
+a:link {
+color: blue;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+color: purple;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: black;
+background-color: transparent;
+text-decoration: underline;
+} 
+a:active {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+</style>

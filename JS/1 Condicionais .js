@@ -1,5 +1,54 @@
 //Estruturas condicionais
 
+//Condicional Simples
+if ('condição') {
+   //Bloco de codigo true
+}
+
+//Condicional Composto
+if ('condição') {
+   //Bloco de codigo true
+} else {
+   //Bloco de codigo false
+}
+
+//Condicional Aninhado
+if ('condição') {
+    //Bloco de codigo true
+} else { if ('condição II') {
+    //Bloco de codigo true condição II
+} else {
+   //Bloco de codigo false condição II
+}   
+}
+
+//Condicional Homogênea
+if ('condição') {
+    if ('condição II') {
+        if ('condição III') {
+            //Bloco de codigo true cocondição, condição II e condição III
+        } else {
+            //Bloco de código false (caso uma das três for false)
+        }       
+    }   
+}
+
+//Condicional de Múltipla escolha
+switch (key) {
+    case value:
+        //Bloco de código
+    break; //Caso a key corresponda a value acima sai do switch
+    case value:
+    case value:
+        //Dois casos com o mesmo bloco de código
+        //Bloco de código
+    break;
+    default://Caso a key não corresponda a nenhum dos value acima
+        //Bloco de código
+        break;//Opcional no final do switch
+}
+
+// ------------------------------------------------------------------------------------------
 let num1 = 2;
 let num2 = 8;
 let produto = 16;
@@ -53,58 +102,3 @@ switch (produto) {
         break;
 }
 
-/*
-
-//Condicional Simples
-if (condition) {
-   //Bloco de codigo 
-}
-//Condicional Composto
-if (condition) {
-   //Bloco de codigo 
-} else {
-   //Bloco de codigo 
-}
-//Condicional Aninhado
-if (condition) {
-    //Bloco de codigo
-} else { if (condition) {
-    //Bloco de codigo
-} else {
-   //Bloco de codigo 
-}
-    
-}
-//Condicional Homogênea
-if (condition) {
-    if (condition) {
-        if (condition) {
-            //Bloco de codigo
-        } else {
-            //Bloco de código
-        }
-        
-    }
-    
-}
-
-//Condicional de Múltipla escolha
-switch (key) {
-    case value:
-        //Bloco de código
-    break;
-    case value:
-        //Bloco de código
-    break;
-    case value:
-        //Bloco de código
-    break;
-    case value:
-        //Bloco de código
-    break;
-    default:
-        //Bloco de código
-        break;//Opcional no final
-}
-
-*/

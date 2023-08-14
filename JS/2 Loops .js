@@ -1,3 +1,34 @@
+//Estruturas de repetição
+
+//Loop for
+for(let i = 0; i <= 10; i++){
+   //Bloco de código 
+}//Sai do laço quando a condição for false
+
+//Loop for in
+for (const key in object) {
+    //Bloco de código
+}//Percorre os indexs de uma array ou as propriedades de um objeto
+
+//Loop for of
+for (const iterator of object) {
+    //Bloco de código
+}//Percorre os valores de uma array ou os valores de um objeto
+
+//Loop while
+while (condition) {//Condição false para de realizar interações
+    //Bloco de código
+    i++
+}
+
+//Loop do while
+do {//Roda ao menos uma vez
+    //Bloco de código
+    i++
+} while (condition);//Condição false para de realizar interações
+
+// ------------------------------------------------------------------------------------------
+
 for(let i=0; i <= 10 ;i++){
     console.log("(Loop for) O valor de i é: "+i);
 
@@ -30,44 +61,3 @@ do {//Roda aumenos uma vez!
     console.log('(Loop do while) contador 2: '+contador2);
     contador2++;
 } while (contador2<limite2);//Como contador2 é maior do que limite2, sai do loop quando chega na condição.
-
-/*
-
-for(variável de controle; condição; contador){
-   //bloco de código 
-}
-
-Incremento do i:       
-i++ ou i+=1 ou i=i+1
-
-*/
-
-
-/*
-
-//Loops
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
-for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
-        
-    }
-}
-
-for (const iterator of object) {
-    
-}
-
-while (condition) {
-    
-}
-
-do {
-    
-} while (condition);
-
-*/

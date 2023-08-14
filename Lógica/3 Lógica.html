@@ -1,0 +1,14 @@
+<h1>Gravitação universal de Newton</h1>
+
+<script>
+
+    const constanteGravitacional = (6,7*10**(-11));
+    let massaM1 = parseFloat(prompt("Massa Ativa (kg):"));
+    let massaM2 = parseFloat(prompt("Massa Passiva (kg):"));
+    let distancia = parseFloat(prompt("Distância entre os dois corpos (m):"));
+    let x = distancia**2;
+    let y = constanteGravitacional*massaM1*massaM2;
+    let forca = y/x;
+    document.write("<br>Força gravitaciona é: "+forca)
+
+</script>
