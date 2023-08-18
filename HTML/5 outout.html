@@ -1,0 +1,27 @@
+
+Output - Saida de dados
+
+<p id="myp"></p>
+<button onclick="window.print()">Print</button>
+
+<script>
+let x = 200;
+let y = 457;
+
+// Escrevendo em um elemento HTML - inner(interno)
+document.getElementById("myp").innerHTML= "innerHTML: "+ x*y; 
+// Escrevendo na saída HTML - Usar após o carregamento de um documento HTML excluirá todo o HTML existente
+document.write("document.write: "+x*y) 
+// Escrevendo em uma caixa de alerta
+window.alert("alert: "+x*y)
+// Escrevendo no console do navegador - Usado para fins de depuração
+console.log("console.log: "+x*y)
+// Imprimir o conteúdo da janela atual
+window.print()
+
+
+
+</script>
+
+
+

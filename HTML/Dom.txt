@@ -1,0 +1,6 @@
+DOM - Document Object Model
+
+Estrutura de árvore criado pelo browser para o JavaScript
+Pepresentação do HTML em Objetos
+Propriedades e métodos
+JavaScript usa a DOM para se conectar ao HTML

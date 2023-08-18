@@ -1,0 +1,19 @@
+
+<script>
+    //Joquimho simples de tabuada!
+    let fator = parseInt(prompt("Tabuado do:"));
+    let limite = parseInt(prompt("De 0 até ?"));
+    for (let i = 0; i <= limite; i++) {
+        alert(fator+" x "+i+" = ?");
+        let resposta = parseInt(prompt("Resposta"));  
+        if (resposta == fator*i) { 
+            
+            alert("Certo!");
+            document.write("("+fator+" x "+ i +" = "+resposta+") Resposta certa!<br>");
+        } else {
+            alert("Errado!");
+            document.write("("+fator+" x "+ i +" = "+resposta+") Resposta errada é = "+ fator*i+"<br>")
+        };
+    };
+
+</script>
