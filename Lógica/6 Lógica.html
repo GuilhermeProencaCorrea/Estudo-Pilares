@@ -1,21 +1,16 @@
 
-<button onclick="b1(1)">1</button>
-<button onclick="b1(2)">2</button>
-<button>3</button>
-<button>+</button>
+<button onclick="b1('1')">1</button>
+<button onclick="b1('2')">2</button>
+<button onclick="b1('+')">+</button>
+<button onclick="total()">=</button>
+<p id="tela"></p>
 
 <script>
     //Calculadora
-    let tela = 0;
-
+    let tela = '';
     function b1 (n){
-        tela+=n;
-        alert(tela)
+        tela+=parseInt(n);
+        
+        document.getElementById("tela").innerHTML = tela;
     };
-    function somar (){
-        tela+6
-    };
-
-
-    
 </script>
