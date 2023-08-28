@@ -1,0 +1,20 @@
+<p>Declare um vetor de 10 posições e o preencha com os 10 primeiros números impares e o escreva.</p>
+<br>
+
+<script>
+
+    const numerosImpares = [];
+
+    for (let i = 0, n = 1 ; i <= 9; i++) {
+
+    
+        if (n%2 != 0) {
+           
+            numerosImpares[i]=n;
+        }else{
+            i--;
+        }
+        n++;
+    }
+    document.write(numerosImpares);
+</script>

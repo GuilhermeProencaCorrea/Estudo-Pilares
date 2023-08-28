@@ -1,0 +1,16 @@
+
+<p>Leia um vetor de 12 posições e em seguida ler também dois valores X e Y quaisquer correspondentes a duas posições no vetor. Ao final seu programa deverá escrever a soma dos valores encontrados nas respectivas posições X e Y.</p>
+<br>
+<script>
+
+    const numeros = [1,2,3,4,5,6,7,8,9,10,11,12];
+    document.write(numeros+'<br>');
+    alert(numeros);
+    let x =parseInt(prompt('Posição X entre 0 é 11:'));
+    let y = prompt('Posição Y entre 0 é 11:');
+    document.write('X Posição => '+x+' valor: '+numeros[x]+'<br>');
+    document.write('Y Posição => '+y+' valor: '+numeros[y]+'<br>');
+    let soma = numeros[x]+numeros[y];
+    document.write('X + Y = '+soma);
+
+</script>

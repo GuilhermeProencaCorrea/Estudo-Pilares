@@ -1,0 +1,45 @@
+<!--!Eventos que ocorrem com os elementos HTML: Pode ser algo que o navegador faz ou uma interção do usuário.-->
+<!--?Exemplo: onclick(usuário clico) - onmouseover - onmouseout -->
+<!--?Exemplo: onmouseover(usuário passo o mouse)-->
+<!--?Exemplo: onmouseout (usuário tiro o mouse de cima do elemento)-->
+
+<!--!Podemos passar mais de uma função em um evento, basta separa por ; -->
+<button onclick="alerta (); soma()">Botão com Evento</button>
+
+<p id="p"></p>
+
+<div onmouseover="retireMouse ()" onmouseout="passeMouse ()" id="quadrado">Olá</div>
+
+<script>
+
+    function alerta () {
+        
+        let numeroUm = prompt();
+        let numeroDois = prompt();
+        let soma = numeroUm + numeroDois;
+    };
+    function soma () {
+        alerta("uw");
+    };
+    function retireMouse () {
+        document.getElementById("quadrado").innerHTML=":)";
+    }
+    function passeMouse () {
+        document.getElementById("quadrado").innerHTML=":("
+    }
+
+</script>
+
+<style>
+    #quadrado{
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+        font-size: 50px;
+    }
+</style>

@@ -1,0 +1,8 @@
+*{/*Reset básico - (O seletor * passa as propriedades para todos os elementos)*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    font-family:sans-serif;
+}

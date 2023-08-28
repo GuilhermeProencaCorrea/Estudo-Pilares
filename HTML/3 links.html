@@ -1,42 +1,45 @@
-<!--Links-->
+<!--!Links - apontam para um destino especificado (Navegar em páginas)-->
 
-<a href="./3.1 links.html" target="_self" title="Link para próxima página">My link</a><!--Linka o texto ao uma URL-->
+<a 
+href="https://www.google.com"
+target="_blank" 
+title="Página do Google">Google</a>
+<!--?Atributo href="aponta o destino do link"-->
+<!--?href = "mailto:example@gmail.com" Abre em um gerenciador de email-->
 
-<!--atributo target => especifica onde abrir o documento
-        _self abre na mesma guia
-        _blank abre em uma nova guia
-        _parent abre no quadro pai
-        _top abre em todo corpo da janela
-    -->
+<!--?Atributo tartle="especefica a abertura"  pode receber 4 valores "_self", "_blank", " _parent " e "_top" -->
+<!--?"_self" (próprio) abre na mesma guia (padrão)-->
+<!--?"_blank" (em branco) abre em uma nova guia-->
+<!--?"_parent" abre no quadro pai-->
+<!--?"_top" abre em todo corpo da janela-->
 
-<!--href = "mailto:example@example.com" Abre um gerenciador de email-->
+<!--?Atributo título="fornece informações sobre o link ao passar o mouse"-->
 
-<br>
-<!--Imagem com um link-->
-<a href="https://www.w3schools.com/html/html_links.asp" title="w3schools">
-    <img src="./../assets/monalisa.jpg" alt="" width="70px" height="50px">
+
+<!--!Imagem com um link-->
+<a href="https://www.w3schools.com" title="w3schools">
+    <img src="./../assets/monalisa.jpg" alt="" width="" height="">
 </a>
 
 <br>
-<!--Botão com um link-->
-<a href="https://www.w3schools.com/html/html_links.asp" title="w3schools">
-    <button>My button</button>
+<!--!Botão com um link-->
+<a href="./3.1 links.html" title="Vai para uma página interna">
+    <button>Sub-página</button>
 </a>
 
-<!--Marcadores: link para um paragrafo-->
-<a href="#5p" id="Botaolink">My link</a>
-<p>My texto</p>
-<p>My texto</p>
-<p>My texto</p>
-<p>My texto</p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p id="5p">My texto</p>
-<p>My texto</p>
-
+<!--!Marcadores: link para um paragrafo-->
+<!--?Estilizar link com botão-->
+<a href="#p4" id="link-botao">Paragrafo 4</a>
+<!--?Passamos o #id do parágrofo no atributo href=""-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a provident assumenda fuga? Animi, veritatis sunt? Illo perferendis provident tempora quae, dolorum laboriosam amet vero natus, nihil, aut adipisci tempore.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil itaque reprehenderit repellat voluptate. Modi accusamus dolore minima velit at quas aperiam eligendi veritatis repellendus. Quam omnis soluta labore atque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere minus culpa consectetur vitae, totam porro nostrum expedita commodi repellat earum ducimus officia ea! Nemo sunt labore natus id non?</p>
+<p id="p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, mollitia asperiores nihil cumque soluta a totam. Mollitia minus, temporibus, aliquid repellat quo corrupti suscipit quia sed, at dolores unde modi.</p>
+<!--!Coloraçõa para os link link: azul, hover: azul-claro, visited: purple e active: red-->
 
 
 <style>
-#Botaolink:link, #Botaolink:visited {
+#link-botao:link, #link-botao:visited {
 background-color: #f44336;
 color: white;
 padding: 15px 25px;
@@ -46,14 +49,10 @@ display: inline-block;
 margin: 10px;
 border-radius: 10px;
 }
-#Botaolink:hover, #Botaolink:active {
+#link-botao:hover, #link-botao:active {
 background-color: red;
 }
-/* 
-Coloração dos links:
-link não visitado azul
-link visitado roxo
-link ativo vermelho*/
+
 a:link {
 color: blue;
 background-color: transparent;
@@ -65,7 +64,7 @@ background-color: transparent;
 text-decoration: none;
 }
 a:hover {
-color: black;
+color: rgb(38, 38, 248);
 background-color: transparent;
 text-decoration: underline;
 } 

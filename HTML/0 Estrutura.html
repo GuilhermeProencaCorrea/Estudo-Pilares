@@ -1,17 +1,120 @@
 <!DOCTYPE html><!--Define o tipo da página-->
 
-<html><!-- tag raiz do html --></html>
+<html><!--?tag raiz do html -->
+    <head><!--?cabeça- configuração-->
+        <meta charset="UTF-8"><!--?Tipo de caracteres-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--?Evitar problemas no internet explore-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--?Deixa o site responsivo-->
+        <link rel="stylesheet" href="style.css"><!--?Inporta CSS externo-->
+        <title></title><!--?Título da página-->
+    </head>
+    <body><!--?corpo - estrutura-->
 
-<head><!-- cabeça do html - título e metadados--></head>
+        <!--! Todo elemento html pode receber atributos, são espesificados na tag inícial: icrementão o elemento-->
+ 
+        <!--?Tag de título (heading-cabeçalho)h1 até h6 (níveis de importância)-->
+        <h1></h1>
 
-<body><!-- corpo do html - estrutura da página --></body>
+        <!--?Tag de paragrafo-->
+        <p></p>
 
-<meta charset="UTF-8"><!--Tipo de caracteres-->
-<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Evitar problemas no internet explore-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Deixa o site responsivo-->
-<link rel="stylesheet" href="style.css"><!--Inporta CSS externo-->
+        <!--?Tag de imagens-->
+        <img src="https://media.istockphoto.com/id/517188688/pt/foto/paisagem-de-montanha.jpg?s=612x612&w=0&k=20&c=uFGUrUT6gA8FrTWhE10YYzngWPlDLssKxJiDs1Qw2Qs=" 
+        alt="Lindo campo verdejante" width="" height="" style="border: 1px solid #666;">
+        
+        <!--?Tag de links-->
+        <a href="" target="_blank"></a>
 
-<title></title><!--Título da página => dento da tag head-->
+        <!--?Tag de audio e de Vídeo-->
+        <audio controls title="Para de mandar audio eu to na Ucrania!">
+            <source src="./../assets/para-de-mandar-audio-to-na-ucrania.mp3"><source >
+        </audio>
+        <video controls src="./../assets/55c0a981.mp4"></video>
 
-<h1><!-- Tag de título h1 até h6 (níveis de importância) --></h1>
-<p><!-- Tag de paragrafo --></p>
+        <!--?Tags de lista ordenada e não ordenada-->
+        <ul><!--!Lista não ordenada-->
+            <li>Tópico 1</li>
+            <li>Tópico 2</li>
+            <li>Tópico 3</li>
+        </ul>
+        <ol><!--!Lista ordenada-->
+            <li>Faça isso</li>
+            <li>Depois aquilo</li>
+            <li>Novamente isso</li>
+        </ol>
+
+        <!--?Tags de tabela-->
+        <table>
+            <tr><!--!Linha-->
+                <td 
+                style="
+                background-color: red; 
+                width: 50px; 
+                height: 50px;
+                text-align: center;
+                "
+                >1</td><!--!Coluna-->
+                <td
+                style="
+                background-color: red; 
+                width: 50px; 
+                height: 50px;
+                text-align: center;
+                "
+                >2</td>
+            </tr>
+            <tr>
+                <!--?CSS inline-->
+                <td 
+                style="
+                background-color: red; 
+                width: 50px; 
+                height: 50px;
+                text-align: center;
+                "
+                >3</td>
+
+            </tr>
+        </table>
+
+        <!--?Tag de formulário-->
+        <form action=""></form>
+
+        <!--?Tag de label (rótulo)-->
+        <label for="" placeholder=""></label>
+
+        <!--?Tag de input-->
+        <input type="text" placeholder="texto dentro do input">
+        <input type="number">
+        <input type="radio">
+        <input type="checkbox">
+        <input type="range">
+        <input type="submit">
+
+        <!--?Tag div - caixa organizadoras-->
+
+        <div style="
+        border: 1px solid black; 
+        background-color: #ca0f0f71;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;">
+            <h1>Meu título</h1>
+            <p>Meu parágrafo</p>
+        </div>
+
+        
+        <!--!Tag de estilo interno (bory ou head)-->
+        <style>/*Mundo css*/</style>
+
+        <!--!Tag de script interno (no final da estrutura da página no final da tag bory)-->
+        <script>//Mundo java script</script>
+    </body>
+</html>
+
+
+
+
+
+
+
