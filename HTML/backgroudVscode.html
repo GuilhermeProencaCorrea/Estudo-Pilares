@@ -1,0 +1,31 @@
+<!--!Colocar imagem de fundo do VScode-->
+
+<!--!1) Baixar a extensão (Cunstom CSS and Js Loader)-->
+
+<!--!2) Criar um arquivo vscode_style.css no seguinte caminho:-->
+<!--?C:\Users\(nome do seu usuário)\.vscode\vscode_style (Caso não tenha a pasta vscode_style e só criar uma)-->
+
+<!--!3) Cole o código a seguir dento do arquivo vscode_style.css-->
+<!--?Podemos obter a url do google ou podemos salvar nossas imagens em repositório público no GitHub-->
+<!-- 
+    body{
+    pointer-events: auto !important;
+    background-size: 100% !important;
+    opacity: 0.90 !important;
+    background-position: 0 0 !important;
+    background-image: url('URL DA IMAGEM');
+    content: '';
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background-repeat: no-repeat;
+    } 
+-->
+<!--!4) Vá nas (configurações do vscode > Editor de Texto) é procure por (Code Actions On Save) é click em editar settings.json-->
+<!--!5) Dentro do settings.json adicione o seguinte código:-->
+<!-- 
+"vscode_custom_css.imports": [
+    "file:///C:/Users/GuilhermeP/.vscode/vscode_style/vscode_style.css"
+]   
+-->
+<!--!4) ctrl + p é digite (>Enable Cunstom CSS and JS) é click em restart vscode-->
